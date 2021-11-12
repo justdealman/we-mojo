@@ -1,0 +1,117 @@
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 900;
+
+    &.is-fixed {
+        position: fixed;
+        background-color: @colorWhite;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .08);
+
+        .header {
+            &__row {
+                height: 64px;
+            }
+
+            &-btn {
+                color: @colorLink;
+                fill: @colorLink;
+                background-color: transparent;
+
+                &:hover {
+                    color: @colorLinkHover;
+                    fill: @colorLinkHover;
+                    background-color: transparent;
+                }
+
+                &:active {
+                    color: @colorLinkActive;
+                    fill: @colorLinkActive;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        height: 96px;
+        transition: height .3s ease;
+    }
+
+    &-logo {
+        display: inline-block;
+        fill: #EC6B5F;
+        padding: 10px;
+        margin: -10px 109px -10px -10px;
+        transition: fill .1s ease;
+
+        &:hover {
+            fill: #404669;
+        }
+
+        &__icon {
+            width: 120px;
+            height: 32px;
+        }
+    }
+
+    &-nav {
+        display: inline-block;
+        font-size: 0;
+        margin: 0 -28px;
+
+        &__col {
+            display: inline-block;
+            margin: 0 28px;
+        }
+
+        &__item {
+            display: block;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 600;
+            padding: 10px;
+            margin: -10px;
+            transition: color .2s ease;
+        }
+    }
+
+    &-btn {
+        display: inline-block;
+        font-size: 0;
+        color: @colorWhite;
+        fill: @colorWhite;
+        cursor: pointer;
+        padding: 14px 24px;
+        margin-left: auto;
+        background-color: @colorLink;
+        border-radius: 24px;
+        transition: all .1s ease;
+
+        &:hover {
+            background-color: @colorLinkHover;
+        }
+
+        &:active {
+            background-color: @colorLinkActive;
+        }
+
+        &__text {
+            display: inline-block;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 600;
+        }
+
+        &__icon {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            margin: -6px -8px -6px 8px;
+        }
+    }
+}

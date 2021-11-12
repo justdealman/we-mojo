@@ -1,0 +1,36 @@
+@colorBase: #000000;
+@colorWhite: #FFFFFF;
+@colorDark: #3E435E;
+@colorLink: #3A3CC5;
+@colorLinkHover: #663FF2;
+@colorLinkActive: #17238E;
+
+@fMontserrat: ~'"Montserrat", sans-serif';
+
+@imgUrl: '../img';
+@picsUrl: '../pic';
+
+@large: ~'(max-width: 1920px)';
+@medium: ~'(max-width: 1664px)';
+@notebook: ~'(max-width: 1404px)';
+@tablet: ~'(max-width: 1025px)';
+@mobile: ~'(max-width: 770px)';
+@small: ~'(max-width: 607px)';
+
+.placeholder(@color) {
+	::-webkit-input-placeholder {
+		color: @color;
+	}
+
+	:-moz-placeholder {
+		color: @color;
+	}
+
+	::-moz-placeholder {
+		color: @color;
+	}
+
+	:-ms-input-placeholder {
+		color: @color;
+	}
+}
