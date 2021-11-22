@@ -182,11 +182,11 @@ button {
 	margin: 0 auto;
 
     @media @tablet {
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 
-    @media @small {
+    @media @mobile {
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -197,6 +197,10 @@ button {
     width: 100%;
     padding-top: 96px;
     padding-bottom: 50px;
+
+    @media @medium {
+        padding-bottom: 0;
+    }
 }
 
 .slick-has-arrows {
@@ -222,6 +226,16 @@ button {
             margin-right: 24px;
         }
 
+        @media @medium {
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+
+        @media @notebook {
+            margin-left: 12px;
+            margin-right: 12px;
+        }
+
         &:hover {
             background-color: fade(@colorDark, 100%);
         }
@@ -245,12 +259,25 @@ button {
     padding: 14px 10px;
     margin: 24px -10px 0;
 
-    &:hover {
-        color: @colorLinkHover;
-        fill: @colorLinkHover;
+    @media @mobile {
+        min-width: 44px;
+        min-height: 48px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
-    &:active {
+    &:not(.is-silent):hover {
+        color: @colorLinkHover;
+        fill: @colorLinkHover;
+
+        &:not(:active) {
+            svg {
+                transform: translateX(12px);
+            }
+        }
+    }
+
+    &:not(.is-silent):active {
         color: @colorLinkActive;
         fill: @colorLinkActive;
     }
@@ -260,6 +287,10 @@ button {
         font-size: 16px;
         line-height: 20px;
         font-weight: 600;
+
+        @media @mobile {
+            display: none;
+        }
     }
 
     &__icon {
@@ -267,5 +298,6 @@ button {
         width: 32px;
         height: 32px;
         margin: -6px 0 -6px 16px;
+        transition: transform .2s ease;
     }
 }

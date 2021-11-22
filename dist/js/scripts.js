@@ -23,11 +23,14 @@ $(function() {
 		speed: 500,
         infinite: false,
 		responsive: [{
-            breakpoint: 992,
+            breakpoint: 1405,
             settings: {
-                fade: false,
+                variableWidth: true,
             }
-		}],
+		}, {
+            breakpoint: 768,
+            settings: 'unslick',
+        }],
 	});
 
 	$('.js-works-slider').slick({
@@ -41,11 +44,15 @@ $(function() {
 		speed: 500,
         infinite: false,
 		responsive: [{
-            breakpoint: 992,
+            breakpoint: 1664,
             settings: {
-                fade: false,
+                dots: false,
+                variableWidth: true,
             }
-		}],
+		}, {
+            breakpoint: 768,
+            settings: 'unslick',
+        }],
 	});
 
 	var isMobile = false,
@@ -66,21 +73,13 @@ $(function() {
     startApp();
 
     var lastWidth = $(window).width();
-    $(window).on('resize', _.debounce(function() {
+    $(window).on('resize orientationchange', _.debounce(function() {
         if ( $(window).width() !== lastWidth ) {
             startApp();
             lastWidth = $(window).width();
+            $('.js-services-slider, .js-works-slider').slick('resize');
         }
     }, 100));
-
-    $(document).on('scroll', _.debounce(function() {
-        var $header = $('.js-header');
-        if ($(document).scrollTop() > 0) {
-            $header.addClass('is-fixed');
-        } else {
-            $header.removeClass('is-fixed');
-        }
-    }, 0));
 
     var actionItems = [{
         url: './img/male-1.png',

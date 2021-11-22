@@ -2,16 +2,107 @@
     padding: 40px 0 24px;
     background-color: @colorWhite;
 
+    @media @medium {
+        padding-top: 32px;
+    }
+
+    @media @mobile {
+        padding-top: 58px;
+    }
+
     &-list {
         display: flex;
         justify-content: space-between;
         font-size: 0;
         margin: 0 -24px;
 
+        @media @medium {
+            justify-content: flex-start;
+            margin: 0 -16px;
+        }
+
+        @media @notebook {
+            margin: 0 -12px;
+        }
+
+        @media @mobile {
+            flex-wrap: wrap;
+        }
+
         &__col {
             display: inline-block;
             padding: 0 24px;
             margin-bottom: -8px;
+
+            @media @medium {
+                padding: 0 16px;
+            }
+
+            @media @notebook {
+                padding: 0 12px;
+            }
+
+            @media @mobile {
+                width: 100%;
+                margin-top: 24px;
+            }
+
+            &_1 {
+                margin-right: 118px;
+
+                @media @tablet {
+                    margin-right: 0;
+                }
+
+                @media @mobile {
+                    order: 4;
+                }
+            }
+
+            &_2 {
+                margin-right: 55px;
+
+                @media @notebook {
+                    display: none;
+                    margin-right: 0;
+                }
+
+                @media @mobile {
+                    order: 1;
+                    display: block;
+                }
+            }
+
+            &_3 {
+                @media @mobile {
+                    order: 2;
+                }
+            }
+
+            &_4 {
+                margin-left: auto;
+
+                @media @mobile {
+                    position: absolute;
+                    right: 0;
+                    top: -32px;
+                    width: auto;
+                    margin-top: 0;
+                }
+            }
+        }
+
+        &__group {
+            display: none;
+
+            @media @notebook {
+                display: block;
+                margin-top: 24px;
+            }
+
+            @media @mobile {
+                display: none;
+            }
         }
     }
 
@@ -20,13 +111,32 @@
         color: @colorDark;
         font-size: 16px;
         line-height: 20px;
-        font-weight: 600;
+        font-weight: 500;
         margin-bottom: 8px;
+
+        &_address {
+            margin-bottom: 24px;
+        }
+
+        br {
+            display: none;
+
+            @media @medium {
+                display: block;
+            }
+        }
     }
 
     &-logo {
         padding: 4px 0;
         margin-bottom: 8px;
+
+        @media @mobile {
+            position: absolute;
+            left: 16px;
+            top: -28px;
+            padding: 0;
+        }
 
         &__icon {
             fill: #878BA0;
@@ -47,7 +157,7 @@
             display: inline-block;
             font-size: 16px;
             line-height: 20px;
-            font-weight: 600;
+            font-weight: 500;
         }
 
         &__icon {
