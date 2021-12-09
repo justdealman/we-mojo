@@ -101,14 +101,15 @@ $(function() {
         sex: 'female',
     }];
 
-    var $action = $('.js-action');
-    if ($action.length > 0) {
-        var random = Math.floor(Math.random() * actionItems.length);
+    var $actions = $('.js-action');
+    if ($actions.length > 0) {
+        $actions.each(function() {
+            var $t = $(this);
+            var random = Math.floor(Math.random() * actionItems.length);
 
-        $action.attr('data-sex', actionItems[random].sex);
-        $action
-            .find('.js-action-icon')
-            .attr('src', actionItems[random].url);
-        $action.addClass('is-visible');
+            $t.attr('data-sex', actionItems[random].sex);
+            $t.find('.js-action-icon').attr('src', actionItems[random].url);
+            $t.addClass('is-visible');
+        });
     }
 });
