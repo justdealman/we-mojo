@@ -29,6 +29,10 @@ body {
 	background: #F5F5F7;
 	-webkit-tap-highlight-color: transparent;
 	-webkit-font-smoothing: antialiased;
+
+    &.is-locked {
+        overflow: hidden;
+    }
 }
 
 p {
@@ -329,5 +333,55 @@ button {
     @media @mobile {
         font-size: 24px;
         line-height: 28px;
+    }
+}
+
+.field {
+    overflow: hidden;
+    position: relative;
+    padding-top: 16px;
+    margin-top: -16px;
+
+    &__input {
+        width: 100%;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 21px 0 19px;
+        border-bottom: 2px solid @colorBase;
+
+        &:not(.has-error):focus {
+            border-color: #377DEB;
+        }
+
+        &.has-error {
+            color: #C4151C;
+            border-color: #C4151C;
+        }
+    }
+
+    &__label {
+        overflow: hidden;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 21px;
+        z-index: 1;
+        max-width: 100%;
+        color: #B4B4B4;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 600;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin-top: 16px;
+        pointer-events: none;
+
+        &.is-active {
+            top: 0;
+            font-size: 14px;
+            line-height: 17px;
+            color: @colorBase;
+            margin-top: 0;
+        }
     }
 }

@@ -12,7 +12,7 @@
 	<link href="./css/styles.css" rel="stylesheet">
 	<body>
 		<div class="wrapper">
-			<div class="header-menu">
+			<div class="header-menu js-menu-open">
 				<i></i>
 			</div>
 			<header class="header js-header">
@@ -39,7 +39,7 @@
 							</div>
 						</div>
 
-						<button class="header-btn">
+						<button class="header-btn js-modal-open">
 							<span class="header-btn__text">Связаться с нами</span>
 
 							<svg class="header-btn__icon">
@@ -627,6 +627,188 @@
 				</div>
 			</div>
 		</footer>
+
+		<div class="modal">
+			<div class="modal__row">
+				<div class="modal__content">
+					<div class="form">
+						<div class="modal-close js-modal-close">
+							<svg class="modal-close__icon">
+								<use xlink:href="./img/sprite.svg#close"></use>
+							</svg>
+						</div>
+
+						<span class="form__title">Вместе создадим лучший цифровой продукт</span>
+
+						<div class="form-tags">
+							<div class="form-tags__col">
+								<div class="form-tags__item is-active js-tag-toggle">
+									<span class="form-tags__text">Стартап</span>
+
+									<svg class="form-tags__icon form-tags__icon_default">
+										<use xlink:href="./img/sprite.svg#plus"></use>
+									</svg>
+
+									<svg class="form-tags__icon form-tags__icon_selected">
+										<use xlink:href="./img/sprite.svg#check"></use>
+									</svg>
+
+									<svg class="form-tags__icon form-tags__icon_remove">
+										<use xlink:href="./img/sprite.svg#minus"></use>
+									</svg>
+								</div>
+							</div>
+
+							<div class="form-tags__col">
+								<div class="form-tags__item js-tag-toggle">
+									<span class="form-tags__text">Интернет-магазин</span>
+
+									<svg class="form-tags__icon form-tags__icon_default">
+										<use xlink:href="./img/sprite.svg#plus"></use>
+									</svg>
+
+									<svg class="form-tags__icon form-tags__icon_selected">
+										<use xlink:href="./img/sprite.svg#check"></use>
+									</svg>
+
+									<svg class="form-tags__icon form-tags__icon_remove">
+										<use xlink:href="./img/sprite.svg#minus"></use>
+									</svg>
+								</div>
+							</div>
+
+							<div class="form-tags__col">
+								<div class="form-tags__item js-tag-toggle">
+									<span class="form-tags__text">Корпоративный сайт</span>
+
+									<svg class="form-tags__icon form-tags__icon_default">
+										<use xlink:href="./img/sprite.svg#plus"></use>
+									</svg>
+
+									<svg class="form-tags__icon form-tags__icon_selected">
+										<use xlink:href="./img/sprite.svg#check"></use>
+									</svg>
+
+									<svg class="form-tags__icon form-tags__icon_remove">
+										<use xlink:href="./img/sprite.svg#minus"></use>
+									</svg>
+								</div>
+							</div>
+
+							<div class="form-tags__col">
+								<div class="form-tags__item is-active js-tag-toggle">
+									<span class="form-tags__text">Мобильное приложение</span>
+
+									<svg class="form-tags__icon form-tags__icon_default">
+										<use xlink:href="./img/sprite.svg#plus"></use>
+									</svg>
+
+									<svg class="form-tags__icon form-tags__icon_selected">
+										<use xlink:href="./img/sprite.svg#check"></use>
+									</svg>
+
+									<svg class="form-tags__icon form-tags__icon_remove">
+										<use xlink:href="./img/sprite.svg#minus"></use>
+									</svg>
+								</div>
+							</div>
+
+							<div class="form-tags__col">
+								<div class="form-tags__item js-tag-toggle">
+									<span class="form-tags__text">Поддержка</span>
+
+									<svg class="form-tags__icon form-tags__icon_default">
+										<use xlink:href="./img/sprite.svg#plus"></use>
+									</svg>
+
+									<svg class="form-tags__icon form-tags__icon_selected">
+										<use xlink:href="./img/sprite.svg#check"></use>
+									</svg>
+
+									<svg class="form-tags__icon form-tags__icon_remove">
+										<use xlink:href="./img/sprite.svg#minus"></use>
+									</svg>
+								</div>
+							</div>
+
+							<div class="form-tags__col">
+								<div class="form-tags__item js-tag-toggle">
+									<span class="form-tags__text">Продвижение</span>
+
+									<svg class="form-tags__icon form-tags__icon_default">
+										<use xlink:href="./img/sprite.svg#plus"></use>
+									</svg>
+
+									<svg class="form-tags__icon form-tags__icon_selected">
+										<use xlink:href="./img/sprite.svg#check"></use>
+									</svg>
+
+									<svg class="form-tags__icon form-tags__icon_remove">
+										<use xlink:href="./img/sprite.svg#minus"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-list">
+							<!--<div class="form-list__item">
+								<div class="field">
+									<input type="text" class="field__input has-error">
+									<label class="field__label">Имя</label>
+								</div>
+							</div>-->
+							<div class="form-list__item">
+								<div class="field">
+									<input type="text" class="field__input">
+									<label class="field__label">Ваше имя</label>
+								</div>
+							</div>
+
+							<div class="form-list__item">
+								<div class="field">
+									<input type="text" class="field__input">
+									<label class="field__label">Телеграмм, почта или любой другой канал связи</label>
+								</div>
+							</div>
+
+							<div class="form-list__item">
+								<div class="field">
+									<input type="text" class="field__input">
+									<label class="field__label">Номер телефона</label>
+								</div>
+							</div>
+						</div>
+
+						<button class="form__btn">Отправить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="menu-m">
+			<div class="menu-m__container">
+				<div class="menu-m-close js-menu-close">
+					<svg class="menu-m-close__icon">
+						<use xlink:href="./img/sprite.svg#close"></use>
+					</svg>
+				</div>
+
+				<div class="menu-m-nav">
+					<a href="#" class="menu-m-nav__item">Направления</a>
+					<a href="#" class="menu-m-nav__item">Решения</a>
+					<a href="#" class="menu-m-nav__item">Работы</a>
+					<a href="#" class="menu-m-nav__item">Контакты</a>
+				</div>
+
+				<button class="menu-m__btn header-btn js-modal-open">
+					<span class="header-btn__text">Связаться с нами</span>
+
+					<svg class="header-btn__icon">
+						<use xlink:href="./img/sprite.svg#arrow"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
 		
 		<script src="./js/libs.js"></script>
 		<script src="./js/scripts.js"></script>

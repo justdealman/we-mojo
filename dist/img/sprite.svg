@@ -29,5 +29,18 @@
         <path fill-rule="evenodd" clip-rule="evenodd" d="M59.5787 6C59.5787 9.46408 56.9393 12 53.3768 12C49.7981 12 47.1748 9.44751 47.1748 6C47.1748 2.55249 49.7981 0 53.3768 0C56.9393 0 59.5787 2.53592 59.5787 6ZM49.8305 6C49.8305 8.20441 51.3527 9.7127 53.3768 9.7127C55.4009 9.7127 56.9231 8.20441 56.9231 6C56.9231 3.79559 55.4009 2.2873 53.3768 2.2873C51.3527 2.2873 49.8305 3.79559 49.8305 6Z"/>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M29.5787 6C29.5787 9.46408 26.9393 12 23.3768 12C19.7981 12 17.1748 9.44751 17.1748 6C17.1748 2.55249 19.7981 0 23.3768 0C26.9393 0 29.5787 2.53592 29.5787 6ZM19.8305 6C19.8305 8.20441 21.3527 9.71271 23.3768 9.71271C25.4009 9.71271 26.9231 8.20441 26.9231 6C26.9231 3.79559 25.4009 2.2873 23.3768 2.2873C21.3527 2.2873 19.8305 3.79559 19.8305 6Z"/>
     </symbol>
-
+    <symbol id="close" viewBox="0 0 32 32" fill="none">
+        <path d="M25.9998 25.9996L6 5.99976" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M26 6.00024L6.00016 26.0001" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="plus" viewBox="0 0 32 32" fill="none">
+        <path d="M26 16H6" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M16 6V26" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="check" viewBox="0 0 32 32" fill="none">
+        <path d="M7 15.5L12.6842 22L25 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="minus" viewBox="0 0 32 32" fill="none">
+        <path d="M26.001 16H6.00098" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
 </svg>
